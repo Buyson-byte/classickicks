@@ -1,0 +1,187 @@
+ body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      margin: 0;
+    }
+
+    .navbar-custom {
+      background-color: #2d2d2d;
+      padding: 15px 30px;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #f4a261 !important;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .search-input {
+      border-radius: 30px;
+      padding: 8px 15px;
+      border: none;
+      width: 250px;
+    }
+
+    .icon-btn {
+      position: relative;
+      color: white;
+      font-size: 1.2rem;
+      background: none;
+      border: none;
+      margin-left: 15px;
+    }
+
+    .badge-custom {
+      background-color: red;
+      font-size: 10px;
+      padding: 2px 5px;
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      right: -8px;
+    }
+
+    .divider {
+      width: 1px;
+      height: 25px;
+      background-color: #999;
+      margin: 0 10px;
+    }
+
+    .wishlist-label {
+      font-size: 0.9rem;
+      margin-left: 5px;
+    }
+    .carousel-indicators [data-bs-target]{
+        background-color: gray; 
+    }
+
+.card-img-top {
+    height: 120px; 
+    object-fit: contain; 
+    padding: 10px; 
+}
+
+.navbar-brand img {
+  max-height: 150px;
+  width: auto;
+}
+
+
+.admin-nav-tabs .nav-link {
+  background-color: #343a40;
+  color: #fff;
+  border: 1px solid #495057;
+}
+
+.admin-nav-tabs .nav-link.active {
+  background-color: #212529;
+  color: #ffc107;
+  border-bottom: 2px solid #ffc107;
+}
+
+.admin-nav-tabs .nav-link:hover {
+  background-color: #495057;
+  color: #ffc107;
+}
+
+
+/* banner */
+
+.marquee-section {
+  --marquee-background-color: #999;
+  --marquee-text-color: #ffffff;
+  --animation-time: 30s;
+  background-color: var(--marquee-background-color);
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+.offer-text-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  animation: marqueeScroll var(--animation-time) linear infinite;
+}
+
+.grid-wrap {
+  display: flex;
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.grid-wrapper {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.richtext p {
+  margin: 0;
+  color: var(--marquee-text-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Carousel */
+  /* Center arrows closer to carousel content */
+  #categoryCarousel .carousel-control-prev,
+  #categoryCarousel .carousel-control-next {
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    z-index: 2;
+  }
+
+  #categoryCarousel .carousel-control-prev {
+    left: -20px;  /* adjust this value to control how close to center */
+  }
+
+  #categoryCarousel .carousel-control-next {
+    right: -20px;  /* adjust this value to control how close to center */
+  }
+
+  @media (max-width: 768px) {
+    #categoryCarousel .carousel-control-prev {
+      left: -10px;
+    }
+
+    #categoryCarousel .carousel-control-next {
+      right: -10px;
+    }
+  }
+/* Active state: solid gray */
+    .shipping-btn.active {
+        background-color: #6c757d; /* Bootstrap gray */
+        color: #fff;
+        border-color: #6c757d;
+    }
+    /* Ensure uniform light gray look */
+    .card.bg-light {
+        background-color: #f8f9fa !important; /* Bootstrap light gray */
+    }
+    .card-header.bg-light {
+        background-color: #f1f3f4 !important; /* slightly darker gray for contrast */
+    }
+
+    
