@@ -1,10 +1,12 @@
 <?php
-include_once(__DIR__ . "/../config.php");
+function connection() {
+    $host = getenv('MYSQLHOST');
+    $user = getenv('MYSQLUSER');
+    $pass = getenv('MYSQLPASSWORD');
+    $dbname = getenv('MYSQLDATABASE');
+    $port = getenv('MYSQLPORT');
 
-function connection(){
-    global $host, $user, $pass, $dbname, $port;
-
-    $conn = new mysqli($host, $user, $pass, $dbname, $port);
+    $conn = new mysqli($host, $user, $pass, $dbname, (int)$port);
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
@@ -12,3 +14,4 @@ function connection(){
 
     return $conn;
 }
+?>
