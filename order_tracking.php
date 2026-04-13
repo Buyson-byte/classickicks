@@ -55,7 +55,7 @@ $stmt->close();
     <div class="position-relative">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb justify-content-center mb-2">
-                <li class="breadcrumb-item"><a href="home.php" class="text-decoration-none text-white">Home</a></li>
+                <li class="breadcrumb-item"><a href="index.php" class="text-decoration-none text-white">Home</a></li>
                 <li class="breadcrumb-item"><a href="my_account.php" class="text-decoration-none text-white">My Account</a></li>
                 <li class="breadcrumb-item active text-white" aria-current="page">Track Order #<?php echo $order_id; ?></li>
             </ol>

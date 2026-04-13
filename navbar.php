@@ -98,7 +98,7 @@ if (isset($_SESSION['user_id'])) {
 </style>
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
   <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="home.php">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.php">
       <img src="images/newlogo.png" alt="Logo" style="height: 60px; width: 80px;">
     </a>
 
@@ -108,7 +108,7 @@ if (isset($_SESSION['user_id'])) {
 
     <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="home.php">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.php">HOME</a></li>
         <li class="nav-item"><a class="nav-link" href="shop.php">SHOP</a></li>
       </ul>
 

@@ -11,6 +11,6 @@ if (!isset($_SESSION['user_id'])) {
 if ($_SESSION['role'] !== 'admin') {
     // Logged in but not admin
     $_SESSION['message'] = "You are not authorized to access this page!";
-    header("Location: home.php");
+    header("Location: index.php");
     exit;
 }

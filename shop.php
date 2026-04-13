@@ -142,8 +142,8 @@ $products = $stmt->get_result();
   <div class="position-relative">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb justify-content-center mb-2">
-        <li class="breadcrumb-item"><a href="home.php" class="text-white text-decoration-none">Home</a></li>
-        <li class="breadcrumb-item active text-white" aria-current="page">Shop</li>
+        <li class="breadcrumb-item"><a href="index.php" class="text-white text-decoration-none">Home</a></li>
+        <li class="breadcrumb-item active text-white" aria-current="page">Shop</a></li>
       </ol>
     </nav>
     <h1 class="fw-bold text-uppercase">SHOP</h1>

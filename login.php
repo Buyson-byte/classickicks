@@ -12,11 +12,7 @@ if (isset($_SESSION['user_id'])) {
     if ($_SESSION['role'] === 'admin') {
         header("Location: admindash.php");
     } else {
-        header("Location: home.php");
-    }
-    exit;
-}
-
+        header("Location: index.php");
 $message = "";
 
 if(isset($_POST['submit'])){
@@ -42,7 +38,7 @@ if(isset($_POST['submit'])){
                  if ($row['role'] === 'admin') {
                     header("Location: admindash.php");
                 } else {
-                    redirect("home.php", "Logged in successfully!");
+                    redirect("index.php", "Logged in successfully!");
                 }
                 exit;
             } else {
@@ -146,7 +142,7 @@ if(isset($_POST['submit'])){
 <div class="login-container">
     <!-- Logo with redirect -->
     <div style="text-align: center; margin-bottom: 20px;">
-        <a href="home.php">
+        <a href="index.php">
             <img src="images/logowithbg.png" alt="Logo" style="height: 80px; width: auto;">
         </a>
     </div>
