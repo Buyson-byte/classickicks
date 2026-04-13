@@ -1,13 +1,14 @@
 <?php
     function connection(){
         
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "kicks_n_style"; 
+    $host = getenv("MYSQLHOST");
+    $user = getenv("MYSQLUSER");
+    $pass = getenv("MYSQLPASSWORD");
+    $dbname = getenv("MYSQLDATABASE");
+    $port = getenv("MYSQLPORT");
 
 
-    $conn = new mysqli($servername, $username, $password, $database); 
+    $conn = new mysqli($host, $user, $pass, $dbname, $port); 
 
 
     if ($conn->connect_error) {
